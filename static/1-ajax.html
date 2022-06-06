@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>File Trans</title>
+
+</head>
+<body>
+
+	<input type="file" class="myfile" />
+	<button >提交</button>
+
+</body>
+<script>
+	let btn = document.querySelector("button");
+	btn.onclick = function(){
+        let xhr = new XMLHttpRequest();
+        let tmp = document.querySelector(".myfile").files[0];
+        let form = new FormData();
+        form.append("obj",tmp);
+//        form.append("name","张三");
+
+        xhr.open("post","http://127.0.0.1:3000/upload",true);
+        xhr.onload = function() {
+            console.log(xhr.responseText);
+        }
+        xhr.send(form);
+	}
+</script>
+</html>
+

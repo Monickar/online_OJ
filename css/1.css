@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    font-family: "PingFang SC","Lantinghei SC","Helvetica Neue",Helvetica,Arial,"Microsoft YaHei","微软雅黑",STHeitiSC-Light,simsun,"宋体","WenQuanYi Zen Hei","WenQuanYi Micro Hei",sans-serif;
+    background-color: #053063;
+  }
+.header-wrap{
+
+    width: 100%;
+
+}
+.header-top{
+    width: 100%;
+    height: 98px;
+    background-color: #063468;
+}
+.header-content{
+    margin-left: 303px;
+}
+.header-top-solgan{
+    position: absolute;
+    top: 16px;
+    left: 1000px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 24px;
+    color: #fff;
+    width: 440px;
+    height: 48px;
+}
+.solgan-bigtitle{
+    position: absolute;
+    top: 16px;
+    left: 550px;
+    text-align: left;
+    font-size: 55px;
+    line-height: 60px;
+    color: #fff;
+    width: 440px;
+    height: 48px;
+}
+.solgan-title{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-right: #135eb6 1px solid;
+    left:0;
+    top: 50%;
+    margin-top: -18px;
+    overflow: hidden;
+}
+.solgan-content{
+    float: left;
+    width: 180px;
+    margin-left: 50px;
+}
+.domPc{
+    /* opacity: 1;
+    transition: opacity 1s;
+    display: block; */
+    width: 100%;
+}
+.chanel{
+    /* width: 100%; */
+    background-color: #053063;
+    margin-top: 0px;
+}
+.chanel-list{
+    border: 1px solid #053063;
+    height: 122px;
+}
+.chanel-list li{
+     /* padding-top: 34px;
+    padding-bottom: 38px; */
+    /* padding: 0 20px;
+    list-style: none;
+    height: 122px;
+    line-height: 122px; */
+    list-style: none;
+}
+.chanel-list .menuItem{
+    float: left;
+    /* padding-left: 70px;
+    padding-right: 70px; */
+    border-right: 1px solid #0b5bb0;
+}
+.chanel-list .menuItem1{
+    float: left;
+    /* padding-left: 120px;
+    padding-right: 80px; */
+    border-right: 1px solid #0b5bb0;
+}
+.chanel-list .menuItem2{
+    float: left;
+}
+.chanel-list li>a{
+    display: inline-block;
+    padding: 0 49px;
+    height: 122px;
+    line-height: 122px;
+    text-decoration: none;
+    color: #fff;
+}
+.chanel-list li>a:hover{
+    background-color: #1268df;
+    color: #e47919;
+}
+

@@ -1,0 +1,169 @@
+.container {
+    background-color: blue;
+    background-attachment: fixed;
+}
+
+.main1 {
+        background-color: rgba(255, 255, 255, 0.4);
+        margin-top: 35px;
+        margin: 0 auto;
+        width: 90%;
+        height: 800px;
+        box-shadow: 0 5px 15px rgba(20, 20, 20, 0.8);
+        display: flex;
+        border-radius: 50px;
+        align-items: center;
+        top: 200px;
+        backdrop-filter: blur(50px);
+        text-align: center;
+}
+
+.left {
+    
+    float: left;
+    width: 80%;
+    height: 700px;
+    background-color: rgba(245, 245, 245, .6);
+    border-radius: 20px;
+    
+    margin-left: 40px;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+    margin-top: 20px;
+
+}
+.look {
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    width: 15%;
+    height: 700px;
+    margin-right: 20px;
+}
+.input1 {
+    margin-top: 10px;
+    border-radius: 8px;
+    height: 44%;
+    background-color: rgba(245, 245, 245, .6);
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.buttom {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    height: 50px;
+    /* width: ; */
+
+}
+.text1 {
+    display: block;
+    margin: 0 auto;
+    height: 95%;
+    width: 95%;
+    margin-top: 14px;
+    border: 20px;
+    background-color: rgba(245, 245, 245, .6);
+    font-size: 20px;
+}
+.text_input {
+    display: block;
+    
+    height: 90%;
+    width: 95%;
+    background-color: rgba(245, 245, 245, .6);
+    border: 10px;
+    font-size: 20px;
+}
+/* 编译按钮 */
+.buttom{
+        display: block;
+        align-items: center;
+        margin:0 auto;
+        width: 270px; /* 宽度 */
+	    height: 40px; /* 高度 */
+	    border-width: 0px; /* 边框宽度 */
+	    border-radius: 3px; /* 边框半径 */
+	    background: #1E90FF; /* 背景颜色 */
+	    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	    outline: none; /* 不显示轮廓线 */
+	    font-family: Microsoft YaHei; /* 设置字体 */
+	    color: white; /* 字体颜色 */
+	    font-size: 17px; /* 字体大小 */
+}
+.buttom:hover{
+    background: #5599FF;
+}
+
+/* 提交按钮 */
+.buttom_submit{
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    width: 270px; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+}
+.buttom_submit:hover{
+    background: #5599FF;
+}
+
+
+/* 文件提交按钮 */
+.dif{
+    display:block;
+    align-items: center;
+    margin: 0 auto;
+    width: 270px; 
+	height: 40px; 
+	border-width: 0px; 
+	border-radius: 3px;
+	background: #1E90FF; 
+	cursor: pointer; 
+	outline: none; 
+	font-family: Microsoft YaHei; 
+	color: white; 
+	font-size: 17px; 
+}
+.dif:hover{
+    background: #5599FF;
+    }
+/* .file {
+    position: relative;
+    width: 270px; 
+	height: 40px; 
+	border-width: 0px; 
+	border-radius: 3px;
+	background: #1E90FF; 
+	cursor: pointer; 
+	outline: none; 
+	font-family: Microsoft YaHei; 
+	color: white; 
+	font-size: 17px; 
+}
+.file input {
+    position: absolute;
+    font-size: 18px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}  */

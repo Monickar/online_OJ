@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/2.css">
+    <title>实验</title>
+</head>
+<body background="./image/shenlan.jpeg" style=" background-attachment: fixed">
+    <div class="title">C++作业提交</div>
+    <div class="main1">
+        <div class="left">
+            <textarea rows="20" cols="20" class="text1" type="text" id="result1"></textarea>
+        </div>
+
+        <div class="look">
+            <div style="color: royalblue;font-size: 20px;">输入</div>
+            <div class="input1">
+				<textarea rows="8" cols="8" class="text_input" id="result_output"></textarea>
+            </div>
+            <div style="color: royalblue;font-size: 20px;">输出</div>
+            <div class="input1">
+                <textarea rows="8" cols="8" class="text_input" id="result"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+		<button class="dif" id="">上传文件</button>
+
+        <br>
+
+        <button class="buttom_submit">提交</button>	
+
+        <br>
+        <br>
+
+        <input type="file" class="myfile" />
+        <button class="buttom">编译</button>
+
+
+
+<script>
+	const btn = document.getElementsByTagName('button')[1];
+	const result = document.getElementById("result");
+	btn.onclick = function() {
+	    const xhr = new XMLHttpRequest();
+	    xhr.open("GET","http://127.0.0.1:3001/upload");
+	    xhr.send();
+	    xhr.onreadystatechange = function() {
+		if(xhr.readyState === 4){
+		    if(xhr.status >= 200 && xhr.status < 300){
+            result_output.innerHTML = xhr.response;
+		    }
+		}
+	    }
+	}
+	const sub = document.getElementsByTagName('button')[2];
+	var result_input;
+
+	sub.onclick = function() {
+		 const xhr1 = new XMLHttpRequest();
+        result_input= document.getElementById('result1').value;
+
+		 xhr1.onreadystatechange = function() {
+			 if(xhr1.readyState === 4 && status < 300) {
+                var ans = xhr1.response;
+                result.innerHTML=ans;
+			 }
+		};
+	xhr1.open('POST','http://127.0.0.1:8000/server', true);
+    xhr1.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+	xhr1.send( 'ans=' + result_input);
+	}
+
+        let btn1 = document.querySelector("button");
+        //let btn = document.getElementsByTagName('button')[2];
+        btn1.onclick = function(){
+            let xhr2 = new XMLHttpRequest();
+            let tmp = document.querySelector(".myfile").files[0];
+            let form = new FormData();
+            form.append("obj",tmp);
+            xhr2.onreadystatechange = function() {
+			 if(xhr2.readyState === 4 && status < 300) {
+                var ans2 = xhr2.response;
+                result.innerHTML=ans2;
+			 }
+            };
+    
+            xhr2.open("post","http://127.0.0.1:3000/upload",true);
+            xhr2.onload = function() {
+                console.log(xhr.responseText);
+
+            }
+            xhr2.send(form);
+        }
+    </script>
+</html>
