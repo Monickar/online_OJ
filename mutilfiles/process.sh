@@ -1,6 +1,6 @@
 #!/bin/zsh
 #创建 temp 文件夹(保证temp一直存在) 并在 文件夹内解压文件,
-
+#修改123
 if not [ -f  "temp" ];then
     mkdir temp
 fi
@@ -38,8 +38,10 @@ chmod +x mid.sh
 echo "before cpl"
 echo `pwd`
 cd ${array_me[5]}
+input1="${array_me[3]}.txt"
+
 if [ -f "a.out" ];then
-	./a.out>../out.txt # 编译结果放在 out 文件中
+	cat ../../input/$intput1|./a.out>../out.txt # 编译结果放在 out 文件中
 fi
 
 # 和答案进行对比
